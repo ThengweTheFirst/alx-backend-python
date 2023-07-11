@@ -11,6 +11,7 @@ Notice that the total runtime is roughly 10 seconds, explain it to yourself.
 import asyncio
 import time
 
+
 async def measure_runtime() -> float:
     '''
     Runs async comprehension in parallel and returns the total time
@@ -22,6 +23,7 @@ async def measure_runtime() -> float:
 
     return time.time() - start_time
 
-if __name == '__main__':
+
+if __name__ == '__main__':
     print(asyncio.run(measure_runtime()))
 
